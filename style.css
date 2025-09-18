@@ -1,24 +1,50 @@
-:root {
+:root {/* declaro variables de colores para un uso especifico*/
     --main-color: beige;
     --secondary-color: lightgray;
     --highlight-color: darkblue;
+    --item-zapato-deportivo:white;
+    --item-zapato-formal:black;
+    --item-sandalia: red;
 }
 
 *{
+    /*reset pagina*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.closet{
+.closet{/*closet tiene in borde, un espaciado interno y un color declarado en variable*/
     border: 2px solid black;
     padding: 15px;
     background-color: var(--main-color);
 }
 .closet__shoes{
+    /*closet__shoes tiene un espaciad en el margen superior y un fondo del color declarado en la variable*/
     margin-top: 10px;
     background-color: var(--secondary-color);
 }
 .closet__shoes--item{
+    /*
+    le aplico una fuente general a
+    en negrita y un color declarado en variable*/
     font-weight: bold;
     color: var(--highlight-color);
+}
+
+.closet__shoes--item--deportivo{
+    /* le aplico un borde solido y un color declarado en la variable*/
+border: 2px solid var(--item-zapato-deportivo) ;
+color: var(--item-zapato-deportivo);
+
+}
+.closet__shoes--item--formales{
+    /*/* le aplico un borde solido y un color declarado en la variable*/
+    border: 2px solid var(--item-zapato-formal);
+    color: var(--item-zapato-formal);
+}
+
+.closet__shoes--item-sandalias{
+    /* le aplico un borde punteado y un color declarado en la variable*/
+    border: 2px dashed var(--item-sandalia);
+    color: var(--item-sandalia);
 }
