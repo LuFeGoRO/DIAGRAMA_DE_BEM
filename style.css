@@ -1,3 +1,9 @@
+:root {
+    --main-color: beige;
+    --secondary-color: lightgray;
+    --highlight-color: darkblue;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,13 +12,13 @@
 .closet{
     border: 2px solid black;
     padding: 15px;
-    background-color: beige;
+    background-color: var(--main-color);
 }
 .closet__shoes{
     margin-top: 10px;
-    background-color: lightgray;
+    background-color: var(--secondary-color);
 }
 .closet__shoes--item{
     font-weight: bold;
-    color: darkblue;
+    color: var(--highlight-color);
 }
